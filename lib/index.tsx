@@ -1,4 +1,4 @@
-console.log(3)
-var div = document.createElement('div')
-div.innerHTML='<h1>hahahaha</h1>'
-document.body.appendChild(div)
+import React from 'react'
+import ReactDOM from 'react-dom'
+console.log(React);
+console.log(ReactDOM);
