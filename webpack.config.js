@@ -1,28 +1,36 @@
-const  path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-module.exports ={
-    mode:'production',
-    entry:{
-        index:'./lib/index.tsx'
+
+module.exports = {
+    mode: 'production',
+    entry: {
+        index: './lib/index.tsx'
     },
     output: {
-        path:path.resolve(__dirname,'dist'),
+        path: path.resolve(__dirname, 'dist'),
         library: 'FUI',
         libraryTarget: "umd"
     },
-    module:{
+    module: {
         rules: [
             {
-                test:/\.tsx?$/,
+                test: /\.tsx?$/,
                 loader: 'awesome-typescript-loader'
             }
         ]
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'React Wheel',
+            title: "FUI",
             template: "index.html"
-        }),
+        })
     ]
+
 }
+
+
+
+
+
+
