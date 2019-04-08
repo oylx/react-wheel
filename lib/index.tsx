@@ -1,8 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Button from './button'
+import Icon from './icon'
 
-console.log(Button)
-console.log(React);
-console.log(ReactDOM);
-ReactDOM.render(<Button></Button>,document.body)
+ReactDOM.render(<div>
+    <Icon name="wechat"/>
+    <Icon name="water"/>
+    <Icon name="qq"/>
+</div>,document.getElementById('root'))
