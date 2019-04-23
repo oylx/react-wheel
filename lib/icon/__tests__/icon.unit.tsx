@@ -9,10 +9,10 @@ describe('icon', () => {
         expect(json).toMatchSnapshot()
     })
     it('onClick',()=>{
-        let n = 1;
-        const fn = ()=>{n=2};
-        const component = mount(<Icon name="water" onClick={fn}/>)
+        let fn = jest.fn();
+        const component = mount(<Icon name='water' onClick={fn}/>)
         component.find('svg').simulate('click')
-        expect(n).toEqual(2)
+        expect(fn).toBeCalled()
+
     })
 })
