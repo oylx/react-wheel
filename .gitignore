@@ -1,4 +1,5 @@
 /dist/*
+/test-results/
 .idea/
 # Logs
 logs
