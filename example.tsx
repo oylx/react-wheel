@@ -11,7 +11,7 @@ ReactDOM.render(
     <div>
       <header>
         <div className="logo">
-          oylx-react-wheel
+          REACT-WHEEL
         </div>
 
       </header>
