@@ -8,10 +8,12 @@ module.exports = Object.assign({},base,{
     plugins: [
         new HtmlWebpackPlugin({
             title: "FUI",
-            template: "index.html"
+            template: "example.html"
         })
     ],
-
+    entry: {
+        example: './example.tsx',
+    },
 })
 
 
