@@ -23,7 +23,8 @@ const Dialog: React.FunctionComponent<Props> = (props) => {
       props.onClose(e)
     }
   }
-  const result = props.visible ?//return必须是组件或null,但是props.children可能是组件或非组件，所以包一层div
+  //return必须是组件或null,但是props.children可能是组件或非组件，所以包一层div
+  const result = props.visible &&
     <Fragment>
       <div className={sc('mask')} onClick={onClickMask}></div>
       <div className={sc()}>
@@ -39,8 +40,6 @@ const Dialog: React.FunctionComponent<Props> = (props) => {
         </footer>
       </div>
     </Fragment>
-    :
-    null
   return (
     ReactDOM.createPortal(result, document.body)
   )
