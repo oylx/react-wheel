@@ -3,6 +3,8 @@ import Dialog, {alert, confirm, modal} from './dialog'
 
 export default function () {
   const [x, setX] = useState(false)
+  //闭包传API
+  //modal return close的api赋值为close，在事件内部直接调用close(必须es6函数形式，否则自右往左解析报错)
   const openModal = () => {
     const close = modal(<h1>你好
       <button onClick={() =>close()}>close</button>
