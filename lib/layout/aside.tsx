@@ -1,8 +1,11 @@
 import React from 'react'
+import {scopedClassMaker} from "../helpers/classes";
 
-const Aside: React.FunctionComponent = () => {
+const sc = scopedClassMaker('fui-layout')
+
+const Aside: React.FunctionComponent = (props) => {
   return (
-    <div>x</div>
+    <div className={sc('aside')}>{props.children}</div>
   )
 }
 export default Aside
