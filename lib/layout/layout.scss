@@ -1,19 +1,21 @@
 @import "../helper";
 
-.fui-layout{
-  border: 1px solid #000;
+.fui-layout {
   display: flex;
   flex-direction: column;
-  &-content{
+
+  &-content {
     flex-grow: 1;
-    border: 1px solid green;
   }
-  & &{
+
+  & & {
     flex-grow: 1;
     flex-direction: row;
   }
+
   &-hasAside {
     flex-direction: row;
+
     .fui-layout {
       flex-direction: column;
     }

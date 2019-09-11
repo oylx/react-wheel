@@ -1,60 +1,55 @@
-import React from 'react'
-import Header from './header'
-import Footer from './footer'
-import Content from './content'
-import Layout from './layout'
-import Aside from "./aside";
-import {scopedClassMaker} from "../helpers/classes";
+import React from 'react';
+import Layout from './layout';
+import Content from './content';
+import Footer from './footer';
+import Aside from './aside';
+import './layout.example.scss';
+import Header from "./header";
 
-const sc = scopedClassMaker('fui-layout')
 export default function () {
-  return(
+  return (
     <div>
       <div>
-        <h1>这是第一个例子</h1>
-        <Layout>
-          <Header>Header</Header>
-          <Content>Content</Content>
-          <Footer>Footer</Footer>
+        <h1>第一个例子</h1>
+        <Layout style={{height: 500, width: 500}} className="hi">
+          <Header className="x">header</Header>
+          <Content className="y">content</Content>
+          <Footer className="x">footer</Footer>
         </Layout>
       </div>
-
       <div>
-        <h1>这是第二个例子</h1>
-        <Layout className={'hi'}>
-          <Header>Header</Header>
+        <h1>第二个例子</h1>
+        <Layout style={{height: 500, width: 500}} className="hi">
+          <Header className="x">header</Header>
           <Layout>
-            <Aside>aside</Aside>
-            <Content>Content</Content>
+            <Aside className="z">aside</Aside>
+            <Content className="y">content</Content>
           </Layout>
-          <Footer>Footer</Footer>
+          <Footer className="x">footer</Footer>
         </Layout>
       </div>
-
       <div>
-        <h1>这是第三个例子</h1>
-        <Layout>
-          <Header>Header</Header>
+        <h1>第三个例子</h1>
+        <Layout style={{height: 500, width: 500}} className="hi">
+          <Header className="x">header</Header>
           <Layout>
-            <Content>Content</Content>
-            <Aside>aside</Aside>
+            <Content className="y">content</Content>
+            <Aside className="z">aside</Aside>
           </Layout>
-          <Footer>Footer</Footer>
+          <Footer className="x">footer</Footer>
         </Layout>
       </div>
-
       <div>
-        <h1>这是第四个例子</h1>
-        <Layout className={sc({x:true,y:false,z:true})}>
-          <Aside>aside</Aside>
+        <h1>第四个例子</h1>
+        <Layout style={{height: 500, width: 500}} className="hi">
+          <Aside className="z">aside</Aside>
           <Layout>
-            <Header>Header</Header>
-            <Content>Content</Content>
-            <Footer>Footer</Footer>
+            <Header className="x">header</Header>
+            <Content className="y">content</Content>
+            <Footer className="x">footer</Footer>
           </Layout>
         </Layout>
       </div>
-
     </div>
-  )
+  );
 }
