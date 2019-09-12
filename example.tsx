@@ -1,7 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import {HashRouter as Router, Route, Link} from 'react-router-dom';
-// import IconExample from './lib/icon/icon.example';
 import {HashRouter as Router, Route, NavLink} from 'react-router-dom';
 import DialogExample from './lib/dialog/dialog.example';
 import ButtonExample from './lib/button.example';
