@@ -6,7 +6,7 @@ const HtmlWebpackPlugin = require ( 'html-webpack-plugin' )
 module.exports = Object.assign ( {} , base , {
   mode: 'production' ,
   entry: {
-    ...base ,
+    ...base.entry ,
     example: './example.tsx' ,
   } ,
   externals: {
@@ -25,7 +25,7 @@ module.exports = Object.assign ( {} , base , {
   },
   plugins:[
     new HtmlWebpackPlugin({
-      template: 'template.html'
+      template: './example.html'
     })
   ]
 
