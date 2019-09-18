@@ -1,16 +1,18 @@
+$main-color: #F2A33A;
+$second-color:#EB606A;
 .x {
   height: 40px;
-  background: #4285f4;
+  background: $second-color;
   margin: 4px 0;
   color: white;
 }
 .y {
-  background: lighten(#4285f4, 5%);
+  background: lighten($second-color, 5%);
   margin: 4px 0;
   color: white;
 }
 .z {
-  background: #34a853;
+  background: $second-color;
   width: 100px;
   margin: 4px 0;
   color: white;
