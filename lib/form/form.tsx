@@ -10,6 +10,7 @@ interface Props {
   buttons: ReactFragment,
   onSubmit: React.FormEventHandler<HTMLFormElement>,
   onChange: (value: FormValue) => {}
+  onSubmit: React.FormEventHandler
 }
 
 

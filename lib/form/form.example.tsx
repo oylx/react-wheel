@@ -32,5 +32,17 @@ const FormExample: React.FunctionComponent = () => {
       </Form>
     </>
   )
+  // return (
+  //   <>
+  //     <Form value={formData}
+  //           fields={fields}
+  //           onSubmit={() => {}}
+  //           buttons={<>
+  //             <button type="submit">提交</button>
+  //             <button>返回</button>
+  //           </>}>
+  //     </Form>
+  //   </>
+  // )
 }
 export default FormExample

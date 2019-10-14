@@ -17,7 +17,7 @@ ReactDOM.render(
       <Header className="site-header">
         <div className="logo">
           <img src={logo} width="48" height="48" alt=""/>
-          <span> FUI </span>
+          <span> React </span>
         </div>
       </Header>
       <Layout>
