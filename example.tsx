@@ -50,7 +50,7 @@ ReactDOM.render(
         </Content>
       </Layout>
       <Footer className="site-footer">
-        &copy; 欧阳林霞
+        &copy; oylx
       </Footer>
     </Layout>
   </Router>
