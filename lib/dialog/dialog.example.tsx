@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import Dialog, {alert, confirm, modal} from './dialog'
+import Index, {alert, confirm, modal} from './index'
 
 export default function () {
   const [x, setX] = useState(false)
@@ -15,13 +15,13 @@ export default function () {
       <div style={{position: 'relative', border: 'solid 1px red', zIndex: 10, color: 'red'}}>
         <h1>example 1</h1>
         <button onClick={() => setX(!x)}>点我</button>
-        <Dialog visible={x}
-                onClose={() => setX(false)}
-                buttons={[
+        <Index visible={x}
+               onClose={() => setX(false)}
+               buttons={[
                   <button>1</button>,
                   <button>2</button>
                 ]}>
-        </Dialog>
+        </Index>
       </div>
       <div>
         <h1>example 2</h1>

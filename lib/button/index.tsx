@@ -7,7 +7,7 @@ interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   level?: 'important' | 'danger' | 'normal'
 }
 
-const Button: React.FunctionComponent<Props> = (props) => {
+const Index: React.FunctionComponent<Props> = (props) => {
   const {className, children, level, ...rest} = props;
   return (
     <button className={
@@ -19,8 +19,8 @@ const Button: React.FunctionComponent<Props> = (props) => {
   );
 };
 
-Button.defaultProps = {
+Index.defaultProps = {
   level: 'normal'
 };
 
-export default Button;
+export default Index;

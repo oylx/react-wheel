@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from './layout';
+import Layout from './index';
 import Content from './content';
 import Footer from './footer';
 import Aside from './aside';
