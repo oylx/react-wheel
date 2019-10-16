@@ -1,9 +1,9 @@
 {
   "name": "oylx-react-wheel",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "",
-  "main": "dist/lib/index",
-  "types": "dist/lib/index",
+  "main": "dist/index",
+  "types": "dist/index",
   "files": [
     "/dist/**/*"
   ],
