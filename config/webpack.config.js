@@ -8,7 +8,9 @@ module.exports = {
     extensions: ['.ts', '.tsx', '.js', '.jsx'],
   },
   output: {
-    path: path.resolve(__dirname, './../dist'),
+    path: path.join( __dirname, "./../dist"), // 打包后的文件存放的地方,包括lib
+    publicPath: '/dist/',  // 设置公共路径
+    filename: "./../index.js",//相对于公共路径publicPath
     library: 'FUI',
     libraryTarget: "umd"
   },
